@@ -1,0 +1,104 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;  
+  background-color: #03031E;
+
+}
+/* poppins-regular - latin */
+
+* {
+  box-sizing: border-box;
+}
+
+.dropdownNav:hover .chevronDown {
+  transform: rotate(180deg);
+  transition: ease-in-out 0.3s ;
+}
+
+
+.chevronDown {
+  display: inline;
+  transition: ease 0.3s;
+}
+/* 
+.dropdownNav:hover .chevronUp {
+  display: inline;
+} */
+
+.chevronUp {
+  display: none;
+}
+
+.dropdownNav:hover .companyDropdown  {
+  display: grid;
+}
+
+.companyDropdown { 
+  display: none;
+}
+.bg-hero-pattern {
+  background-image: url(../public/images/Website\ designer-amico.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.bg-banner1 {
+  background-image: url(../public/images/banner1.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.heroTxt {
+  font-family: 'Rubik Beastly', cursive;
+}
+
+.caseLine{
+  transition: ease-in-out 0.3s ;
+}
+.caseText:hover .caseLine {
+  transition: ease-in-out 0.3s ;
+  width: 100%;
+
+}
+.tooltip {
+  visibility: hidden;
+}
+
+.tooltipCont:hover .tooltip {
+  visibility: visible;
+  
+}
+
+.gridService:hover {
+  transform: translateY(-20px);
+}
+.gridService{
+  transition: all .3s ease-in-out 0s;
+}
+
+.bg-auth {
+  background-image: url(../public/images/login.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.will-change {
+  will-change: transform;
+  transform: translateX(0)
+  
+}
